@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan - Mobile App Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Alex Morgan</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text">Mobile App Developer</span>
+            </h1>
+            <p class="hero-subtitle">Crafting elegant, intuitive mobile experiences</p>
+            <p class="hero-description">Specializing in iOS, Android, and cross-platform development</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1"></div>
+            <div class="floating-card card-2"></div>
+            <div class="floating-card card-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate mobile app developer with 6+ years of experience creating beautiful, functional applications for iOS and Android platforms. I believe in writing clean code and designing intuitive user interfaces that users love.</p>
+                    <p>My journey in mobile development has taught me the importance of understanding user needs, maintaining code quality, and staying updated with the latest technologies.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-number">50+</div>
+                        <div class="highlight-label">Apps Launched</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number">100K+</div>
+                        <div class="highlight-label">Total Downloads</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number">15+</div>
+                        <div class="highlight-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>iOS Development</h3>
+                    <p>Swift, SwiftUI, Objective-C, Core Data, Networking</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Android Development</h3>
+                    <p>Kotlin, Java, Jetpack, Room, Retrofit, Material Design</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Cross-Platform</h3>
+                    <p>React Native, Flutter, Firebase, Push Notifications</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, User Research, Prototyping, Design Systems</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Backend Integration</h3>
+                    <p>REST APIs, GraphQL, Firebase, AWS, Payment Integration</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Analytics & Testing</h3>
+                    <p>Unit Testing, Integration Testing, Performance Optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTrack Pro</h3>
+                        <p>AI-powered fitness tracking app with personalized workout recommendations and real-time form analysis using computer vision.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">ML Kit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-icon">🔗 Live</a>
+                            <a href="#" class="link-icon">💻 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SocialConnect</h3>
+                        <p>Social networking app with real-time messaging, feeds, and community features. Optimized for 10K+ concurrent users.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-icon">🔗 Live</a>
+                            <a href="#" class="link-icon">💻 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EcoMerce</h3>
+                        <p>E-commerce platform with augmented reality product preview, secure payments, and inventory management system.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">ARCore</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-icon">🔗 Live</a>
+                            <a href="#" class="link-icon">💻 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Mobile Developer</h3>
+                        <div class="timeline-company">Tech Innovations Inc. • 2021 - Present</div>
+                        <p>Led development of 10+ high-impact mobile applications. Mentored junior developers and established best practices for code quality and architecture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Mobile App Developer</h3>
+                        <div class="timeline-company">Digital Solutions Ltd. • 2019 - 2021</div>
+                        <p>Developed iOS and Android applications for e-commerce and fintech sectors. Improved app performance by 40% through optimization.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <div class="timeline-company">StartUp Studio • 2018 - 2019</div>
+                        <p>Started mobile development journey, worked on multiple startup projects using React Native and Firebase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-icon" title="Email">
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alex Morgan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="intro.js"></script>
+</body>
+</html>
